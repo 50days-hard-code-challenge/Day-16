@@ -1,0 +1,13 @@
+bool linearsearch(int arr[], int key, int size){
+
+    if(size==0){
+        return false;
+    }
+    if(arr[0]==key){
+        return true;
+    }
+    else{
+        bool kishor= linearsearch(arr+1, key, size-1);
+        return kishor;
+    }
+}
